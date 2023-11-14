@@ -123,5 +123,30 @@ class CadastroLivroImagem : AppCompatActivity() {
             }
         }
 
+        imageUriPEQ?.let {
+            val riversRef = storageRef.child("${it.lastPathSegment}-${System.currentTimeMillis()}.jpg")
+            val uploadTask = riversRef.putFile(it)
+            uploadTask.addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    riversRef.downloadUrl.addOnSuccessListener { uri ->
+                        val map = HashMap<String, Any>()
+                        map["pic"] = uri.toString()
+                        firebaseFirestore.collection("images").add(map).addOnCompleteListener { firestoreTask ->
+                            if (firestoreTask.isSuccessful){
+                                Toast.makeText(this, "UPLOAD IMAGEM PEQUENA OK!", Toast.LENGTH_SHORT).show()
+                            }else{
+                                Toast.makeText(this, firestoreTask.exception?.message, Toast.LENGTH_SHORT).show()
+                            }
+                            btnImgPEQ?.setImageResource(R.drawable.upload)
+                        }
+                    }
+                } else {
+                    Toast.makeText(this, task.exception?.message, Toast.LENGTH_SHORT).show()
+                    btnImgPEQ?.setImageResource(R.drawable.upload)
+                }
+            }
+        }
     }
+
+
 }
