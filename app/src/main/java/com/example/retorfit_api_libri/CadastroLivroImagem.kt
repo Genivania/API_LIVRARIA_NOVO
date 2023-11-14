@@ -72,7 +72,7 @@ class CadastroLivroImagem : AppCompatActivity() {
 //            Toast.makeText(this,
 //                "BOTÃO DE CADASTRO",
 //                Toast.LENGTH_LONG).show()
-
+           uploadImage()
         }
     }
         //LANÇADOR PARA RECUPERAR IMAGEM GRANDE DA GALERIA PARA O UPLOAD
