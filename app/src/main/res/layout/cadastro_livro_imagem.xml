@@ -15,8 +15,7 @@
         android:layout_height="wrap_content"
         android:text="@string/cadastroLivro"/>
 
-    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:rowCount="1"
@@ -32,10 +31,9 @@
 
         <ImageView
             android:id="@+id/imgPEQ"
-            android:layout_width="200dp"
+            android:layout_width="211dp"
             android:layout_height="200dp"
-            app:srcCompat="@drawable/upload"
-            />
+            app:srcCompat="@drawable/upload" />
 
     </GridLayout>
 
