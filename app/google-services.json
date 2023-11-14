@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "660832648100",
+    "project_id": "upload-image-android-kotlin",
+    "storage_bucket": "upload-image-android-kotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660832648100:android:62c7e833119605f800df31",
+        "android_client_info": {
+          "package_name": "com.example.images_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_i_GOqW1GTj1ytHd12bGp2mL5-KIEaCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660832648100:android:94c98e5945d3c31000df31",
+        "android_client_info": {
+          "package_name": "com.example.retorfit_api_libri"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_i_GOqW1GTj1ytHd12bGp2mL5-KIEaCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
