@@ -18,9 +18,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
 
-<!--        <activity-->
-<!--            android:name=".CadastroLivroImagem"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".CadastroLivroImagem"
+            android:exported="false" />
 
         <!-- <activity -->
         <!-- android:name=".CadastroLivro" -->
@@ -31,7 +31,7 @@
         <!-- android:exported="false" /> -->
 
         <activity
-            android:name=".CadastroLivroImagem"
+            android:name=".CadastroLivro"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

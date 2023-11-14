@@ -41,8 +41,8 @@ class CadastroLivroImagem : AppCompatActivity() {
         initVars()
 
         //TESTE DE RECEBIMENTO DO JSON
-//        val bodyJSON = intent.getStringExtra("bodyJSON")
-//            Log.e("TESTE-JSON", bodyJSON.toString())
+        val bodyJSON = intent.getStringExtra("bodyJSON")
+            Log.e("TESTE-JSON", bodyJSON.toString())
 
         //RECUPERA OS ELEMENTOS DE VIEW DE IMAGENS
         btnImgGRD = findViewById<ImageView>(R.id.imgGRD)
